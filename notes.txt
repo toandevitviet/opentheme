@@ -1,0 +1,5 @@
+change files:
+- config
+- admin/config
+- remove folder install
+- database create dump and change in folder database
