@@ -258,7 +258,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 						<div class="col-sm-12">
 							<div id="menu-icon"><?php echo $text_category; ?></div>
 							<ul id="nav" class="sf-menu-phone">
-                                                            
+                                                        <!-- home -->    
                                                         <?php if (!isset($this->request->get['route'])) { $route='active'; }  else {$route='';}?> 
                                                         <?php if(isset($this->request->get['route']) && ($this->request->get['route'] ==='common/home') || (HTTP_SERVER && (!isset($this->request->get['route'])))) { ?>
                                                             <li class="active">
@@ -275,6 +275,40 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                                                                 </a>
                                                             </li>
                                                         <?php } ?>
+
+														<!--about-->
+                                                        <?php $url_about =  HTTP_SERVER .'index.php?route=information/information&information_id=4';
+                                                    $url_about_len = strlen(isset($this->request->get['route']));
+                                                    if(isset($this->request->get['route'])){
+                                                    	if(strpos($this->request->get['route'],"information/information") !== FALSE){
+                                                        $check =TRUE;
+	                                                    }else{ $check =FALSE;}
+	                                                } else{
+	                                                	$check = FALSE;
+	                                                }
+                                                   
+                                                    if(($url_about_len = 16) && ($check)){ 
+                                                        $url_about_len_update = TRUE;
+                                                    }else{ $url_about_len_update = FALSE;}      
+                                                ?>
+                                                
+                                                <?php if(isset($this->request->get['route']) && ($url_about_len_update)) { ?>
+                                                    <li class="active">
+                                                        <a href="<?php echo $url_about; ?>">
+                                                            <span class="over"></span>
+                                                            <span><?php echo 'About GIG'; ?></span>
+                                                        </a>
+                                                    </li>
+                                                <?php } else { ?>
+                                                    <li class="">
+                                                        <a href="<?php echo $url_about; ?>">
+                                                            <span class="over"></span>
+                                                            <span><?php echo 'About GIG'; ?></span>
+                                                        </a>
+                                                    </li>
+                                                <?php } ?>
+
+
                                                             
 							<?php foreach ($categories as $category) { ?>
 						<?php if ($category['category_id'] == $category_id) { ?>
@@ -318,6 +352,40 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 								<?php } ?>
 								</li>
 								<?php } ?>
+								
+                                <!--contact us-->
+                                <?php $url_contact =  HTTP_SERVER .'index.php?route=information/contact';
+                                    $url_about_len = strlen(isset($this->request->get['route']));
+                                    if(isset($this->request->get['route'])){
+                                    	if(strpos($this->request->get['route'],"information/contact") !== FALSE){
+                                        	$check =TRUE;
+                                    	}else{ $check =FALSE;}
+                                    }else{
+                                    	$check = FALSE;
+                                    }
+                                    
+                                    if(($url_about_len = 18) && ($check)){ 
+                                        $url_about_len_update = TRUE;
+                                    }else{ $url_about_len_update = FALSE;}      
+                                ?>
+                                
+                                <?php if(isset($this->request->get['route']) && ($url_about_len_update)) { ?>
+                                    <li class="active">
+                                        <a href="<?php echo $url_contact;//echo $home; ?>">
+                                            <span class="over"></span>
+                                            <span><?php echo 'Contact us';//echo $text_home; ?></span>
+                                        </a>
+                                    </li>
+                                <?php } else { ?>
+                                    <li class="">
+                                        <a href="<?php echo $url_contact;//echo $home; ?>">
+                                            <span class="over"></span>
+                                            <span><?php echo 'Contact us';//echo $text_home; ?></span>
+                                        </a>
+                                    </li>
+                                <?php } ?>
+
+
 							</ul>
 						</div>
 						
