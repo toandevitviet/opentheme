@@ -3,3 +3,10 @@ change files:
 - admin/config
 - remove folder install
 - database create dump and change in folder database
+- link live: gig.sssmine.org
+
+1: Homepage
+	To slice Homepage in HTML and to load it up on my server
+	a. The html homepage need to with the enquiry box though the enquiry box does not need to be functional to capture real enquiries at this moment.
+	b. The font size need to match the PSD design files
+

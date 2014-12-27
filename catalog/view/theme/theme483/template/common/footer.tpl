@@ -32,7 +32,7 @@
 					<div class="block-content">
 						<ul>
 							<li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
-							<li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
+							<li><a href="<?php echo $return; ?>"><?php echo 'Request for Quote';//$text_return; ?></a></li>
 							<li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
 						</ul>
 					</div>
@@ -45,10 +45,11 @@
 					</div>
 					<div class="block-content">
 						<ul>
-							<li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
-							<li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
-							<li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
-							<li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+                                                    <li><a href="#">Gladness Gift Programmes</a></li>
+<!--							<li><a href="<?php // echo $manufacturer; ?>"><?php // echo $text_manufacturer; ?></a></li>
+							<li><a href="<?php // echo $voucher; ?>"><?php // echo $text_voucher; ?></a></li>
+							<li><a href="<?php // echo $affiliate; ?>"><?php // echo $text_affiliate; ?></a></li>
+							<li><a href="<?php // echo $special; ?>"><?php // echo $text_special; ?></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -62,8 +63,8 @@
 						<ul>
 							<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
 							<li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-							<li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
-							<li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
+<!--							<li><a href="<?php // echo $wishlist; ?>"><?php // echo $text_wishlist; ?></a></li>
+							<li><a href="<?php // echo $newsletter; ?>"><?php // echo $text_newsletter; ?></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -76,9 +77,9 @@
 					<div class="block-content">
 						<ul>
 							<li><a href="http://facebook.com"><?php echo $text_fb; ?></a></li>
-							<li><a href="http://twitter.com"><?php echo $text_twi; ?></a></li>
-							<li><a href="#"><?php echo $text_rss; ?></a></li>
-							<li><a href="http://youtube.com"><?php echo $text_yt; ?></a></li>
+<!--							<li><a href="http://twitter.com"><?php // echo $text_twi; ?></a></li>
+							<li><a href="#"><?php // echo $text_rss; ?></a></li>
+							<li><a href="http://youtube.com"><?php // echo $text_yt; ?></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -92,9 +93,12 @@
 						<div class="foot-phone">
 							<i class="fa fa-phone"></i>
 							<div class="right">
-								<div><?php echo $telephone; ?></div>
-								<div><?php echo $fax; ?></div>
+                                                            <div class="phone-info"><?php echo $telephone; ?></div>
+<!--								<div><?php // echo $fax; ?></div>-->
 							</div>
+                                                        <div class="address-add">
+                                                            <p class="address">Blk 2023 Bukit Batok <br /> Industrial ParkA <br />Street 42, #04-84
+                                                        </div>
 						</div>
 					</div>
 				</div>
@@ -106,7 +110,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
+					<?php // echo $powered; ?><!-- [[%FOOTER_LINK]] -->
+                                        Copyright GIG &copy; <?php echo date("Y"); ?>
 				</div>
 			</div>
 		</div>

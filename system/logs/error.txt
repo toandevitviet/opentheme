@@ -1,0 +1,4 @@
+2014-12-27 3:57:21 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
+2014-12-27 3:57:21 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
+2014-12-27 4:05:55 - PHP Notice:  Undefined index: route in D:\xampp\htdocs\opentheme\catalog\view\theme\theme483\template\common\header.tpl on line 319
+2014-12-27 4:10:06 - PHP Notice:  Undefined variable: HTTP_SERVER in D:\xampp\htdocs\opentheme\catalog\view\theme\theme483\template\common\header.tpl on line 320

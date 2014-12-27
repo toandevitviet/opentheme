@@ -1,3 +1,54 @@
+<!-- Add new block here -->
+<div class="box newquery">
+  <div class="box-heading">
+    Submit your enquries here !
+  </div><!-- end box-heading --> 
+  <div class="box-content">
+        <div class="row">  	
+            <div class="col-sm-12">
+                <div class="query-form">
+                    <div class="status alert alert-success" style="display: none"></div>
+                    <form id="main-query-form" class="contact-form row" name="query-form" method="post">
+                        <div class="form-group col-md-6">
+                            <div class="row">
+                                <label class="col-md-3" for="name">Name:</label>
+                                <span class="col-md-9"><input type="text" name="name" class="form-control" required="required" placeholder="Name"></span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="row">
+                                <label class="col-md-3" for="company">Company name:</label>
+                                <span class="col-md-9"><input type="text" name="email" class="form-control" required="required" placeholder="Company name"></span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="row">
+                                <label class="col-md-3" for="name">TEL:</label>
+                                <span class="col-md-9"><input type="text" name="name" class="form-control" required="required" placeholder="TEL"></span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="row">
+                                <label class="col-md-3" for="company">Email:</label>
+                                <span class="col-md-9"><input type="text" name="email" class="form-control" required="required" placeholder="Email"></span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <label class="col-md-2" for="messages" style="width:14.5%">MESSAGES:</label>
+                                <span class="col-md-10" style="width:85.5%"><textarea name="message" id="message" required="required" class="form-control" rows="10" placeholder="Your Message Here"></textarea></span>
+                            </div>
+                        </div>                        
+                        <div class="form-group col-md-12">
+                            <input type="submit" name="submit" class="btn pull-right" value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
+            </div>
+	</div> 
+  </div> <!-- end box-content -->
+</div> 
+
 <script type="text/javascript">
 	if ($('body').width() > 767) {
 		(function($){$.fn.equalHeights=function(minHeight,maxHeight){tallest=(minHeight)?minHeight:0;this.each(function(){if($(this).height()>tallest){tallest=$(this).height()}});if((maxHeight)&&tallest>maxHeight)tallest=maxHeight;return this.each(function(){$(this).height(tallest)})}})(jQuery)
@@ -8,15 +59,26 @@
 	};
 </script>
 <div class="box featured">
-  <div class="box-heading"><?php echo $heading_title; ?></div>
+  <div class="box-heading">
+      <div class="row">
+          <div class="col-sm-8">
+            <?php echo $heading_title; ?>
+          </div>
+          <div class="col-sm-4 featured-seemore">
+              <a class="" href="#">See more >>></a>
+          </div>
+      </div>
+  </div>
   <div class="box-content">
 	<div class="box-product">
 		<ul class="row">
 		  <?php $i=0; foreach ($products as $product) { $i++ ?>
 		  <?php 
 			   $perLine = 4;
-			   $spanLine = 3;
-			   $last_line = "";
+			   //$spanLine = 3;
+                           $spanLine = 4;
+			   
+                            $last_line = "";
 					$total = count($products);
 					$totModule = $total%$perLine;
 					if ($totModule == 0)  { $totModule = $perLine;}
@@ -102,16 +164,7 @@
 										<a data-id="<?php echo $product['product_id']; ?>;" title="<?php echo $button_cart; ?>" class="tooltip-1 button addToCart">
 											<i class="fa fa-shopping-cart"></i>
 										</a>
-									</div><div class="wishlist">
-										<a class="tooltip-1" title="<?php echo $button_wishlist; ?>"  onclick="addToWishList('<?php echo $product['product_id']; ?>');">
-											<i class="fa fa-star"></i>
-										</a>
-									</div><div class="compare">
-										<a class="tooltip-1" title="<?php echo $button_compare; ?>"  onclick="addToCompare('<?php echo $product['product_id']; ?>');">
-											<i class="fa fa-bar-chart-o"></i>
-										</a>
-									</div>
-									
+									</div>									
 								</div>
 								<div class="clear"></div>
 								<?php if ( $product['rating'] ) { ?>
@@ -164,16 +217,7 @@
 							<a data-id="<?php echo $product['product_id']; ?>;" title="<?php echo $button_cart; ?>" class="tooltip-1 button addToCart">
 								<i class="fa fa-shopping-cart"></i>
 							</a>
-						</div><div class="wishlist">
-							<a class="tooltip-1" title="<?php echo $button_wishlist; ?>"  onclick="addToWishList('<?php echo $product['product_id']; ?>');">
-								<i class="fa fa-star"></i>
-							</a>
-						</div><div class="compare">
-							<a class="tooltip-1" title="<?php echo $button_compare; ?>"  onclick="addToCompare('<?php echo $product['product_id']; ?>');">
-								<i class="fa fa-bar-chart-o"></i>
-							</a>
 						</div>
-						
 					</div>
 					<div class="clear"></div>
 				</div>

@@ -89,7 +89,7 @@
 		</operation>
 		<operation error="skip">
 			<search position="after"><![CDATA[ $_['heading_title'] = 'Featured'; ]]></search>
-			<add><![CDATA[ $_['heading_title'] = 'Featured Products'; ]]></add>
+			<add><![CDATA[ $_['heading_title'] = 'STOCK IMAGES FOR SALE !'; ]]></add>
 		</operation>
 		
 	</file>

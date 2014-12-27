@@ -2,9 +2,10 @@
 #menu {
 	position:relative;
 	width:100%;
-	height:76px;
+	height:75px;
 	z-index:23;
-	top:0;
+	/*top:0;*/
+        top:2px;
 	line-height:0;
 	background: #ffffff; /* Old browsers */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmN2Y3ZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -23,7 +24,7 @@
 	top:100%;
 	left:0;
 	width:100%;
-	height:7px;
+/*	height:7px;*/
 	content:'';
 	background: #3aa3df; /* Old browsers */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNhYTNkZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMzk1ZGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -45,6 +46,8 @@ ul.sf-menu {
 	list-style: none;
 	width:100%;
 	table-layout: fixed;
+        border-right: #82bf40 1px solid;
+        border-bottom: #82bf40 1px solid;
 }
 ul.sf-menu > li:first-child {
 	background: none;
@@ -55,7 +58,9 @@ ul.sf-menu > li {
 	display: table-cell;
 	text-align: center;
 	width: 100%;	
-	background: url(../image/menu-sepatator.png) no-repeat left top;
+/*	background: url(../image/menu-sepatator.png) no-repeat left top;*/
+        border-left: #82bf40 1px solid;
+        border-top: #82bf40 1px solid;
 	}
 .ie ul.sf-menu > li {
 	width: auto;
@@ -74,6 +79,11 @@ ul.sf-menu > li > a {
 	color:#31353d;
 	text-transform:uppercase;
 }
+
+ul.sf-menu li.cat_add a:hover{
+    color: #ffffff;
+}
+
 ul.sf-menu > li:first-child > a {
 }
 ul.sf-menu > li > a span{

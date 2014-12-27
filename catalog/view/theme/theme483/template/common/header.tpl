@@ -193,11 +193,6 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 							</ul>
 						</div>
 						
-						<div class="top-buttons">						
-							<?php echo $currency; ?>
-							<?php echo $language; ?>
-						</div>
-						
 						<!-- search -->
 						<div id="search">
 							<div class="inner">
@@ -207,8 +202,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 						</div>
 						
 						<ul class="links">
-							<?php if (!isset($this->request->get['route'])) { $route='active'; }  else {$route='';}?> <li class="first"><a class="<?php echo $route; if (isset($this->request->get['route']) && $this->request->get['route']=="common/home") {echo "active";} ?>" href="<?php echo $home; ?>"><i class="fa fa-home"></i><span><?php echo $text_home; ?></span></a></li>
-							<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="account/wishlist") {echo "active";} ?>" href="<?php echo $wishlist; ?>" id="wishlist-total"><i class="fa fa-star"></i><?php echo $text_wishlist; ?></a></li>
+							<?php if (!isset($this->request->get['route'])) { $route='active'; }  else {$route='';}?>                               
 							<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="account/account") {echo "active";} ?>" href="<?php echo $account; ?>"><i class="fa fa-user"></i><?php echo $text_account; ?></a></li>
 							<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/cart") {echo "active";} ?>" href="<?php echo $shopping_cart; ?>"><i class="fa fa-shopping-cart"></i><?php echo $text_shopping_cart; ?></a></li>
 							<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/checkout") {echo "active";} ?>" href="<?php echo $checkout; ?>"><i class="fa fa-check"></i><?php echo $text_checkout; ?></a></li>
@@ -252,11 +246,6 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 							<div class="cart-inner"><?php echo $cart; ?></div>
 						</div>
 						
-						<div class="phone">
-							<i class="fa fa-phone"></i>
-							<?php echo $telephone; ?>
-						</div>
-						
 						<div class="clear"></div>
 						
 					</div>
@@ -269,7 +258,25 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 						<div class="col-sm-12">
 							<div id="menu-icon"><?php echo $text_category; ?></div>
 							<ul id="nav" class="sf-menu-phone">
-								<?php foreach ($categories as $category) { ?>
+                                                            
+                                                        <?php if (!isset($this->request->get['route'])) { $route='active'; }  else {$route='';}?> 
+                                                        <?php if(isset($this->request->get['route']) && ($this->request->get['route'] ==='common/home') || (HTTP_SERVER && (!isset($this->request->get['route'])))) { ?>
+                                                            <li class="active">
+                                                                <a href="<?php echo $home; ?>">
+                                                                    <span class="over"></span>
+                                                                    <span><?php echo $text_home; ?></span>
+                                                                </a>
+                                                            </li>
+                                                        <?php } else { ?>
+                                                            <li class="">
+                                                                <a href="<?php echo $home; ?>">
+                                                                    <span class="over"></span>
+                                                                    <span><?php echo $text_home; ?></span>
+                                                                </a>
+                                                            </li>
+                                                        <?php } ?>
+                                                            
+							<?php foreach ($categories as $category) { ?>
 						<?php if ($category['category_id'] == $category_id) { ?>
 							<li class= "active <?php if ($category['children']) { ?>parent<?php } ?>">
 						<?php } else { ?>
@@ -326,6 +333,23 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 				<div class="col-sm-12">
 				<div id="menu">
 					<ul  class="sf-menu">
+                                                <?php if (!isset($this->request->get['route'])) { $route='active'; }  else {$route='';}?> 
+                                                <?php if(isset($this->request->get['route']) && ($this->request->get['route'] ==='common/home') || (HTTP_SERVER && (!isset($this->request->get['route'])))) { ?>
+                                                    <li class="current cat_200">
+                                                        <a href="<?php echo $home; ?>">
+                                                            <span class="over"></span>
+                                                            <span><?php echo $text_home; ?></span>
+                                                        </a>
+                                                    </li>
+                                                <?php } else { ?>
+                                                    <li class="cat_200">
+                                                        <a href="<?php echo $home; ?>">
+                                                            <span class="over"></span>
+                                                            <span><?php echo $text_home; ?></span>
+                                                        </a>
+                                                    </li>
+                                                <?php } ?>
+                                                
 						<?php $cv=0;?>
 						<?php foreach ($categories as $category) { $cv++; ?>
 						<?php if ($category['category_id'] == $category_id) { ?>
