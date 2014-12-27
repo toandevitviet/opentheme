@@ -353,10 +353,15 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                                                 
                                                 <!--about-->
                                                 <?php $url_about =  HTTP_SERVER .'index.php?route=information/information&information_id=4';
-                                                    $url_about_len = strlen($this->request->get['route']);
-                                                    if(strpos($this->request->get['route'],"information/information") !== FALSE){
-                                                        $check =true;
-                                                    }else{ $check =false;}
+                                                    $url_about_len = strlen(isset($this->request->get['route']));
+                                                    if(isset($this->request->get['route'])){
+                                                    	if(strpos($this->request->get['route'],"information/information") !== FALSE){
+                                                        $check =TRUE;
+	                                                    }else{ $check =FALSE;}
+	                                                } else{
+	                                                	$check = FALSE;
+	                                                }
+                                                   
                                                     if(($url_about_len = 16) && ($check)){ 
                                                         $url_about_len_update = TRUE;
                                                     }else{ $url_about_len_update = FALSE;}      
@@ -427,10 +432,15 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                                                 
                                                 <!--contact us-->
                                                 <?php $url_contact =  HTTP_SERVER .'index.php?route=information/contact';
-                                                    $url_about_len = strlen($this->request->get['route']);
-                                                    if(strpos($this->request->get['route'],"information/contact") !== FALSE){
-                                                        $check =true;
-                                                    }else{ $check =false;}
+                                                    $url_about_len = strlen(isset($this->request->get['route']));
+                                                    if(isset($this->request->get['route'])){
+                                                    	if(strpos($this->request->get['route'],"information/contact") !== FALSE){
+                                                        	$check =TRUE;
+                                                    	}else{ $check =FALSE;}
+                                                    }else{
+                                                    	$check = FALSE;
+                                                    }
+                                                    
                                                     if(($url_about_len = 18) && ($check)){ 
                                                         $url_about_len_update = TRUE;
                                                     }else{ $url_about_len_update = FALSE;}      
