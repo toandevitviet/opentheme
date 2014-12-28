@@ -105,13 +105,13 @@ ul.sf-menu > li > a .over{
 	width:100%;
 	height:0;
 	content:'';
-	background:#31353d;
+	background:#61af19;
 }
 ul.sf-menu > li.current>a,
 ul.sf-menu > li>a:hover,
 ul.sf-menu > li.sfHover>a,
 ul.sf-menu > ul > li.active>a  {
-	color:#fff;
+	color:#31353d;
 	}
 ul.sf-menu > li.current>a .over,
 ul.sf-menu > li>a:hover .over,

@@ -16,7 +16,7 @@
 			barDirection: 'leftToRight', 
 			barPosition: 'bottom',
 			easing: 'easeInOutExpo',
-			height: '35.74%',
+			height: '695px',
 			minHeight: '90px',
 			hover: true,
 			pagination: false,

@@ -11,32 +11,32 @@
                     <form id="main-query-form" class="contact-form row" name="query-form" method="post">
                         <div class="form-group col-md-6">
                             <div class="row">
-                                <label class="col-md-3" for="name">Name:</label>
-                                <span class="col-md-9"><input type="text" name="name" class="form-control" required="required" placeholder="Name"></span>
+                                <label class="col-md-4" for="name">Name:</label>
+                                <span class="col-md-8"><input type="text" name="name" class="form-control"></span>
                             </div>
                         </div>
                         <div class="form-group col-md-6">
                             <div class="row">
-                                <label class="col-md-3" for="company">Company name:</label>
-                                <span class="col-md-9"><input type="text" name="email" class="form-control" required="required" placeholder="Company name"></span>
+                                <label class="col-md-4" for="company">Company name:</label>
+                                <span class="col-md-8"><input type="text" name="email" class="form-control"></span>
                             </div>
                         </div>
                         <div class="form-group col-md-6">
                             <div class="row">
-                                <label class="col-md-3" for="name">TEL:</label>
-                                <span class="col-md-9"><input type="text" name="name" class="form-control" required="required" placeholder="TEL"></span>
+                                <label class="col-md-4" for="name">TEL:</label>
+                                <span class="col-md-8"><input type="text" name="name" class="form-control"></span>
                             </div>
                         </div>
                         <div class="form-group col-md-6">
                             <div class="row">
-                                <label class="col-md-3" for="company">Email:</label>
-                                <span class="col-md-9"><input type="text" name="email" class="form-control" required="required" placeholder="Email"></span>
+                                <label class="col-md-4" for="company">Email:</label>
+                                <span class="col-md-8"><input type="text" name="email" class="form-control"></span>
                             </div>
                         </div>
                         <div class="form-group col-md-12">
                             <div class="row">
-                                <label class="col-md-2" for="messages" style="width:14.5%">MESSAGES:</label>
-                                <span class="col-md-10" style="width:85.5%"><textarea name="message" id="message" required="required" class="form-control" rows="10" placeholder="Your Message Here"></textarea></span>
+                                <label class="col-md-2" for="messages" style="width:17.5%">MESSAGES:</label>
+                                <span class="col-md-10" style="width:82.5%"><textarea name="message" id="message" class="form-control" rows="10"></textarea></span>
                             </div>
                         </div>                        
                         <div class="form-group col-md-12">
