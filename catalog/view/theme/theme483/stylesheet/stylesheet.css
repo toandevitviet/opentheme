@@ -4524,7 +4524,9 @@ table.radio {
 }
 
 .wp-slideshow{
-    background: #6b9b13;
+    /*background: #6b9b13;*/
+    background-image: url(../image/bxslider/slider1-1.jpg) !important;
+    background-repeat: repeat-x;
     height: 100%;
 }
 
@@ -4544,5 +4546,5 @@ table.radio {
 }
 
 .header-modules{
-    height: 695px !important;
+    max-height: 695px !important;
 }
