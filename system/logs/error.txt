@@ -69,3 +69,9 @@
 2014-12-27 17:08:51 - PHP Notice:  Undefined index: route in E:\DATA\WEB\Run\htdocs\opentheme\catalog\view\theme\theme483\template\common\header.tpl on line 436
 2014-12-27 17:08:55 - PHP Notice:  Undefined index: route in E:\DATA\WEB\Run\htdocs\opentheme\catalog\view\theme\theme483\template\common\header.tpl on line 435
 2014-12-27 17:08:55 - PHP Notice:  Undefined index: route in E:\DATA\WEB\Run\htdocs\opentheme\catalog\view\theme\theme483\template\common\header.tpl on line 436
+2014-12-29 2:58:51 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
+2014-12-29 2:58:51 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
+2014-12-29 2:59:51 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
+2014-12-29 2:59:51 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
+2014-12-29 3:28:16 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
+2014-12-29 3:28:16 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
