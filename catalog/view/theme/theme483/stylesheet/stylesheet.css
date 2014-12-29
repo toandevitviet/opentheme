@@ -3316,10 +3316,9 @@ ul {
 	padding:0;
 }
 h1.style-1 {
-	border-bottom: 1px solid #e1e1e1;
-	line-height: 30px;
-	margin-bottom: 25px;
-	padding-bottom: 15px;
+	/*border-bottom: 1px solid #e1e1e1;*/
+	line-height: 20px;
+        margin-bottom: 15px;
 }
 .category-list {
 	overflow: auto;
@@ -4155,7 +4154,7 @@ span.toggle {
 /*======================= BREADCRUMB =======================*/
 .breadcrumb a:hover ,
 .breadcrumb a.last {
-	color:#3498db;
+	color:#84BF49;
 }
 .breadcrumb a{
 	color:#31353d;
@@ -4165,7 +4164,7 @@ span.toggle {
 	padding:16px 20px;
 	text-align:left;
 	color:#31353d;
-	background:#f4f4f4;	
+	background:#F1F0EE;	
 	border-radius:0;
 	-moz-border-radius:0;
 	-webkit-border-radius:0;
@@ -4547,4 +4546,22 @@ table.radio {
 
 .header-modules{
     max-height: 695px !important;
+}
+
+.box-about-image{
+    height: 260px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box-about-image img{
+    width: 100%;
+    height: 258px;
+    /*border: 1px #000 solid;*/
+	border: 0;
+}
+
+.about-page .extra-wrap h3{
+    color: #82bf40 !important;
+    margin-top: 15px; 
 }

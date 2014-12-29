@@ -315,7 +315,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 							<li class= "active <?php if ($category['children']) { ?>parent<?php } ?>">
 						<?php } else { ?>
 							<li <?php if ($category['children']) { ?>class="parent"<?php } ?>>
-						<?php } ?><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+						<?php } ?><a href="#"><?php echo $category['name']; ?></a>
 									<?php if ($category['children']) { ?>
 										<?php for ($i = 0; $i < count($category['children']);) { ?>
 										<ul>
@@ -329,20 +329,20 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 										<li <?php if ($category['children'][$i]['children3']) {?>class="parent"<?php } ?>>
 											<?php } ?>
 											<?php if ($category['children'][$i]['children3']) {?>
-											<a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name'];?></a>
+											<a href="#"><?php echo $category['children'][$i]['name'];?></a>
 											<ul>
 											<?php foreach ($category['children'][$i]['children3'] as $ch3) { ?>
 											<li>
 												<?php if ($ch3['category_id'] == $ch3_id) { ?>
-												<a href="<?php echo $ch3['href']; ?>" class="active"><?php echo $ch3['name']; ?></a>
+												<a href="#" class="active"><?php echo $ch3['name']; ?></a>
 												<?php } else { ?>
-												<a href="<?php echo $ch3['href']; ?>"><?php echo $ch3['name']; ?></a>
+												<a href="#"><?php echo $ch3['name']; ?></a>
 												<?php } ?>
 											</li>
 											<?php } ?>
 											</ul>
 											<?php } else {?>
-											<a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name'];?></a>
+											<a href="#"><?php echo $category['children'][$i]['name'];?></a>
 										<?php }?>
 										</li>
 										<?php } ?>
@@ -458,7 +458,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 						<?php } else { ?>
 						<li class="cat_<?php echo $cv ?>">
 						<?php } ?>
-						<a href="<?php echo $category['href']; ?>"><span><?php echo $category['name']; ?></span></a>
+						<a href="#"><span><?php echo $category['name']; ?></span></a>
 						<?php if ($category['children']) { ?>
 							<div class="sf-mega">
 							<?php for ($i = 0; $i < count($category['children']);) { ?>
@@ -473,20 +473,20 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 									<li>
 									<?php } ?>
 									<?php if ($category['children'][$i]['children3']) {?>
-									<a class="screenshot1"  href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name'];?></a>
+									<a class="screenshot1"  href="#"><?php echo $category['children'][$i]['name'];?></a>
 									<ul>
 									<?php foreach ($category['children'][$i]['children3'] as $ch3) { ?>
 										<li>
 										<?php if ($ch3['category_id'] == $ch3_id) { ?>
-										<a href="<?php echo $ch3['href']; ?>" class="current"><?php echo $ch3['name']; ?></a>
+										<a href="#" class="current"><?php echo $ch3['name']; ?></a>
 										<?php } else { ?>
-										<a href="<?php echo $ch3['href']; ?>"><?php echo $ch3['name']; ?></a>
+										<a href="#"><?php echo $ch3['name']; ?></a>
 										<?php } ?>
 									</li>
 									<?php } ?>
 									</ul>
 									<?php } else {?>
-									<a class="screenshot1"  href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name'];?></a>
+									<a class="screenshot1"  href="#"><?php echo $category['children'][$i]['name'];?></a>
 									<?php }?>
 									</li>
 									<?php } ?>
