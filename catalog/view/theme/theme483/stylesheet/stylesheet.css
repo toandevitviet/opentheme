@@ -67,7 +67,7 @@ body {
 }
 #page{
 	/*background:#fff;*/
-        background: #f1f0ee;
+        background: #dddcda;
 	margin:0 auto;
 	overflow:hidden;
 }
@@ -1993,7 +1993,7 @@ aside .info li a:hover,
 }
 .top-banner .s-desc .out span{
 	/*padding-bottom:100px;*/
-        padding-bottom:50px;
+        padding-bottom:128px;
 }
 .top-banner .s-desc .out >div{
 	margin-top:-170px;
@@ -3908,7 +3908,7 @@ footer {
 	position:relative;
 	padding-top:20px;
 	clear: both;
-	background:#f1f0ee;
+	background:#dddcda;
 	margin-top:30px;
 }
 .common-home footer {
@@ -3917,7 +3917,7 @@ footer {
 .block .block-heading {
 	font-family: "Open Sans",sans-serif;
 	color:#000;
-	font-size:14px;
+	font-size:16px;
 	line-height:16px;
 	margin:0 0 18px;
 	text-transform:uppercase;
@@ -3931,7 +3931,7 @@ footer {
 	}
 .block .block-content li a {
 	color:#ac9e9c;
-	font-size:12px;
+	font-size:14px;
 	line-height:14px;
 	word-wrap:break-word; 
 }
@@ -3976,7 +3976,7 @@ span.toggle {
 	font-size:11px;
 	line-height:13px;
 	color:#000;
-	background: #f1f0ee; /* Old browsers */
+	background: #dddcda; /* Old browsers */
 }
 /*======================= MESSAGES =======================*/
 .success,
@@ -4480,7 +4480,7 @@ table.radio {
     color:#6D9A23;
     text-align: right;
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 20px;
     width: 35%;
     padding-right: 0px;
 }
@@ -4511,7 +4511,7 @@ table.radio {
 }
 
 .foot-phone .phone-info{
-    font-size: 16px; 
+    font-size: 18px; 
     line-height: 20px; 
     font-weight: bold; 
     font-style: italic; 
@@ -4545,7 +4545,7 @@ table.radio {
 }
 
 .header-modules{
-    max-height: 695px !important;
+    max-height: 620px !important;
 }
 
 .box-about-image{
@@ -4564,4 +4564,8 @@ table.radio {
 .about-page .extra-wrap h3{
     color: #82bf40 !important;
     margin-top: 15px; 
+}
+
+.address-add p.address{
+	font-size: 14px;
 }
