@@ -3917,7 +3917,7 @@ footer {
 .block .block-heading {
 	font-family: "Open Sans",sans-serif;
 	color:#000;
-	font-size:16px;
+	font-size:18px;
 	line-height:16px;
 	margin:0 0 18px;
 	text-transform:uppercase;
@@ -3931,8 +3931,8 @@ footer {
 	}
 .block .block-content li a {
 	color:#ac9e9c;
-	font-size:14px;
-	line-height:14px;
+	font-size:16px;
+	line-height:16px;
 	word-wrap:break-word; 
 }
 .foot-phone {
@@ -4164,7 +4164,7 @@ span.toggle {
 	padding:16px 20px;
 	text-align:left;
 	color:#31353d;
-	background:#F1F0EE;	
+	background:#dddcda;	
 	border-radius:0;
 	-moz-border-radius:0;
 	-webkit-border-radius:0;
@@ -4567,5 +4567,5 @@ table.radio {
 }
 
 .address-add p.address{
-	font-size: 14px;
+	font-size: 16px;
 }
