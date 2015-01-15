@@ -384,6 +384,21 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                                         </a>
                                     </li>
                                 <?php } ?>
+                                    
+                                <!--Add 2 link duplicate-->
+                                    <li class="">
+                                        <a href="<?php //echo $url_contact;//echo $home; ?>">
+                                            <span class="over"></span>
+                                            <span><?php echo 'Reserve'; ?></span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="<?php //echo $url_contact;//echo $home; ?>">
+                                            <span class="over"></span>
+                                            <span><?php echo 'Reserve'; ?></span>
+                                        </a>
+                                    </li>
+                                    
 
 
 							</ul>
@@ -529,6 +544,23 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                                                         </a>
                                                     </li>
                                                 <?php } ?>
+                                                    
+                                                    
+                                                <!--Add 2 link duplicate-->
+                                                <li class="">
+                                                    <a href="<?php //echo $url_contact;//echo $home; ?>">
+                                                        <span class="over"></span>
+                                                        <span><?php echo 'Reserve'; ?></span>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="<?php //echo $url_contact;//echo $home; ?>">
+                                                        <span class="over"></span>
+                                                        <span><?php echo 'Reserve'; ?></span>
+                                                    </a>
+                                                </li>
+                                    
+                                    
 					</ul>
 						
 				<div class="clear"></div>

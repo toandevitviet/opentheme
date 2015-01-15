@@ -83,3 +83,4 @@
 2015-01-15 4:43:49 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
 2015-01-15 5:18:15 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
 2015-01-15 5:18:15 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
+2015-01-15 9:49:00 - PHP Warning:  Class __PHP_Incomplete_Class has no unserializer in D:\xampp\htdocs\opentheme\system\library\session.php on line 12
