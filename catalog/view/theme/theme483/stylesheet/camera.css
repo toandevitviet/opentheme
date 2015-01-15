@@ -422,11 +422,11 @@
 	z-index: 2;
 }
 .camera_prev {
-	left: 3%;
+	left: -3%;
       /*  left: -3%;*/
 }
 .camera_next {
-	right: 3%;
+	right: -3%;
        /* right:-3%;*/
 }
 .camera_prev  i , 

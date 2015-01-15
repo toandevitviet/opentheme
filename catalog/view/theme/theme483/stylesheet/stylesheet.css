@@ -67,7 +67,7 @@ body {
 }
 #page{
 	/*background:#fff;*/
-        background: #dddcda;
+        background: #bababa;
 	margin:0 auto;
 	overflow:hidden;
 }
@@ -1539,11 +1539,18 @@ header #cart .empty {
 	margin-top:3px;
 }
 /*======================= BOX PRODUCT =======================*/
-.box-product {
+/*.box-product {
 	width:100%;
 	margin:0;
 	padding:0;
+}*/
+
+.box-product {
+	width: 97%;
+	margin: 0px 0px 0px 25px;
+	padding:0;
 }
+
 .box .box-content .box-product ul li.first-in-line {
 	clear:left
 }
@@ -2005,15 +2012,7 @@ aside .info li a:hover,
 	position:relative;
 	height:13px;
 	content:'';
-	background: #f1f1f1; /* Old browsers */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YxZjFmMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOGU4ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top, #f1f1f1 0%, #e8e8e8 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #f1f1f1 0%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #f1f1f1 0%,#e8e8e8 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #f1f1f1 0%,#e8e8e8 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #f1f1f1 0%,#e8e8e8 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-8 */
+	background: #bababa; /* Old browsers */
 }
 .top-banner .row{
 	margin-left:0;
@@ -3908,7 +3907,7 @@ footer {
 	position:relative;
 	padding-top:20px;
 	clear: both;
-	background:#dddcda;
+	background:#bababa;
 	margin-top:30px;
 }
 .common-home footer {
@@ -3930,13 +3929,13 @@ footer {
 	color:#3498db;
 	}
 .block .block-content li a {
-	color:#ac9e9c;
-	font-size:16px;
-	line-height:16px;
+	color:#5d5d5d;
+	font-size:14px;
+	line-height:14px;
 	word-wrap:break-word; 
 }
 .foot-phone {
-    color: #ac9e9c;
+    color: #5d5d5d;
 
 }
 .foot-phone .right div{
@@ -3976,7 +3975,7 @@ span.toggle {
 	font-size:11px;
 	line-height:13px;
 	color:#000;
-	background: #dddcda; /* Old browsers */
+	background: #bababa; /* Old browsers */
 }
 /*======================= MESSAGES =======================*/
 .success,
@@ -4480,7 +4479,7 @@ table.radio {
     color:#6D9A23;
     text-align: right;
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 18px;
     width: 35%;
     padding-right: 0px;
 }
@@ -4511,7 +4510,7 @@ table.radio {
 }
 
 .foot-phone .phone-info{
-    font-size: 18px; 
+    font-size: 16px; 
     line-height: 20px; 
     font-weight: bold; 
     font-style: italic; 
@@ -4534,7 +4533,7 @@ table.radio {
     margin-right: -15px;
 }
 
-#banner-adv{
+/*#banner-adv{
     width:265px;
 }
 
@@ -4542,6 +4541,17 @@ table.radio {
     padding-right: 0px;
     padding-left: 0px;
     width: 76.35%;
+}*/
+
+#banner-adv{
+    width: 292px;
+}
+
+#content_right{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 74.35%;
+    margin-left: 20px;
 }
 
 .header-modules{
@@ -4567,5 +4577,5 @@ table.radio {
 }
 
 .address-add p.address{
-	font-size: 16px;
+	font-size: 14px;
 }
