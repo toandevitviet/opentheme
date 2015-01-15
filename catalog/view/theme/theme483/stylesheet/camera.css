@@ -47,13 +47,24 @@
 .camera_wrap img {
 	max-width: none!important;
 }
-.camera_fakehover {
+/*.camera_fakehover {
 	height: 100%;
 	min-height: 60px;
 	position: relative;
 	width: 100%;
 	z-index: 1;
+}*/
+
+.camera_fakehover {
+	height: 76.5%;
+	min-height: 60px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	margin: 41px 0px;
 }
+
+
 .camera_wrap {
 	width: 100%;
 }
@@ -106,6 +117,16 @@
 	width: 100%;
 	z-index: 0;
 }
+/*.camera_target_content {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}*/
+
 .camera_target_content {
 	bottom: 0;
 	left: 0;
@@ -114,7 +135,9 @@
 	right: 0;
 	top: 0;
 	z-index: 2;
+	border: #243b70 10px solid;
 }
+
 .camera_target_content .camera_link {
 	position:absolute;
 	z-index:2;
@@ -196,7 +219,8 @@
 .camera_caption >.container,
 .camera_pag.container{
 	position:relative;
-	margin:0 auto;
+	/*margin:0 auto;*/
+        margin: 65px auto;
 }
 .camera_caption span{
 	font-size:100px;
