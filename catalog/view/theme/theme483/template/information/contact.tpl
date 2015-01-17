@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <?php echo $column_left; ?>
-		<div class="<?php if ($column_left or $column_right) { ?>col-sm-9<?php } ?> <?php if (!$column_left & !$column_left) { ?>col-sm-12  <?php } ?> <?php if ($column_left & $column_right) { ?>col-sm-6<?php } ?>" id="content"><?php echo $content_top; ?>
+		<div class="<?php if ($column_left or $column_right) { ?>col-sm-12<?php } ?> <?php if (!$column_left & !$column_left) { ?>col-sm-12  <?php } ?> <?php if ($column_left & $column_right) { ?>col-sm-6<?php } ?>" id="content"><?php echo $content_top; ?>
   <div class="breadcrumb">
 	<?php foreach ($breadcrumbs as $breadcrumb) { ?>
 	<?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
@@ -12,19 +12,25 @@
 	<div class="contact-info">
 		<div class="content row">
 			<div class="map-left col-sm-6">      
-				<div class="contact-box"><i class="fa fa-home"></i><b><?php echo $text_address; ?></b>
-					<?php echo $address; ?>
+				<div class="contact-box"><i class="fa fa-home"></i><b class="green-color"><?php echo $text_address; ?></b>
+					<b class="black-color"><?php echo $address; ?></b> 
 				</div>
 				<div class="contact-box">
 					<?php if ($telephone) { ?>
-					<i class="fa fa-phone"></i><b><?php echo $text_telephone; ?></b>
-					<?php echo $telephone; ?>
+					<i class="fa fa-phone"></i><b class="green-color"><?php echo $text_telephone; ?></b>
+					<b class="black-color"><?php echo $telephone; ?></b> 
 					<?php } ?>
 				</div>
 				<div class="contact-box">
 					<?php if ($fax) { ?>
-					<i class="fa fa-phone"></i><b><?php echo $text_fax; ?></b>
-					<?php echo $fax; ?>
+					<i class="fa fa-phone"></i><b class="green-color"><?php echo $text_fax; ?></b>
+					<b class="black-color"><?php echo $fax; ?></b> 
+					<?php } ?>
+				</div>
+				<div class="contact-box">
+					<?php if ($text_email_add) { ?>
+					<i class="fa fa-envelope"></i><b class="green-color"><?php echo $text_email; ?></b>
+					<b class="black-color"><?php echo $text_email_add; ?></b> 
 					<?php } ?>
 				</div>
 			</div>
@@ -37,48 +43,97 @@
 	</div>
 	<div class="content contact-f form-horizontal">
 		<!--<h2><?php echo $text_contact; ?></h2>-->
-		<div class="form-group">
-			<label class="control-label col-sm-5" ><?php echo $entry_name; ?></label>
+
+		<div class="box-content-es">
+		        <div class="row">  	
+		            <div class="col-sm-12">
+		                <div class="query-form-contact">
+		                    <div class="status alert alert-success" style="display: none"></div>
+		                    <form id="main-query-form" class="contact-form row" name="query-form" method="post">
+		                        <div class="form-group-es col-md-6">
+		                            <div class="row">
+		                                <label class="col-md-4" for="name">Name:</label>
+		                                <span class="col-md-8"><input type="text" name="name" class="form-control"></span>
+		                            </div>
+		                        </div>
+		                        <div class="form-group-es col-md-6">
+		                            <div class="row">
+		                                <label class="col-md-4" for="company">Company name:</label>
+		                                <span class="col-md-8"><input type="text" name="email" class="form-control"></span>
+		                            </div>
+		                        </div>
+		                        <div class="form-group-es col-md-6">
+		                            <div class="row">
+		                                <label class="col-md-4" for="name">TEL:</label>
+		                                <span class="col-md-8"><input type="text" name="name" class="form-control"></span>
+		                            </div>
+		                        </div>
+		                        <div class="form-group-es col-md-6">
+		                            <div class="row">
+		                                <label class="col-md-4" for="company">Email:</label>
+		                                <span class="col-md-8"><input type="text" name="email" class="form-control"></span>
+		                            </div>
+		                        </div>
+		                        <div class="form-group-es col-md-12">
+		                            <div class="row">
+		                                <label class="col-md-2" for="messages" style="width:19.5%">MESSAGES:</label>
+		                                <span class="col-md-10" style="width:80.5%"><textarea name="message" id="message" class="form-control" rows="10"></textarea></span>
+		                            </div>
+		                        </div>                        
+		                        <div class="form-group-es col-md-12">
+		                            <input type="submit" name="submit" class="btn pull-right" value="SUBMIT">
+		                        </div>
+		                    </form>
+		                </div>
+		            </div>
+			</div> 
+		  </div> <!-- end box-content -->
+
+
+
+
+		<!-- <div class="form-group">
+			<label class="control-label col-sm-5" ><?php //echo $entry_name; ?></label>
 			<div class="col-sm-7">
-				<input  type="text" name="name" value="<?php echo $name; ?>" />
-				<?php if ($error_name) { ?>
-				<span class="error help-block"><?php echo $error_name; ?></span>
-				<?php } ?>
+				<input  type="text" name="name" value="<?php// echo $name; ?>" />
+				<?php //if ($error_name) { ?>
+				<span class="error help-block"><?php //echo $error_name; ?></span>
+				<?php //} ?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="control-label col-sm-5" ><?php echo $entry_email; ?></label>
+			<label class="control-label col-sm-5" ><?php //echo $entry_email; ?></label>
 			<div class="controls col-sm-7">
-				<input  type="text" name="email" value="<?php echo $email; ?>" />
-				<?php if ($error_email) { ?>
-				<span class="error help-block"><?php echo $error_email; ?></span>
-				<?php } ?>
+				<input  type="text" name="email" value="<?php //echo $email; ?>" />
+				<?php //if ($error_email) { ?>
+				<span class="error help-block"><?php //echo $error_email; ?></span>
+				<?php //} ?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="control-label col-sm-5" ><?php echo $entry_enquiry; ?></label>
+			<label class="control-label col-sm-5" ><?php //echo $entry_enquiry; ?></label>
 			<div class="controls col-sm-7">
-				<textarea  name="enquiry" cols="40" rows="10" ><?php echo $enquiry; ?></textarea>
-				<?php if ($error_enquiry) { ?>
-				<span class="error help-block"><?php echo $error_enquiry; ?></span>
-				<?php } ?>
+				<textarea  name="enquiry" cols="40" rows="10" ><?php //echo $enquiry; ?></textarea>
+				<?php //if ($error_enquiry) { ?>
+				<span class="error help-block"><?php //echo $error_enquiry; ?></span>
+				<?php //} ?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="control-label col-sm-5" ><?php echo $entry_captcha; ?></label>
+			<label class="control-label col-sm-5" ><?php //echo $entry_captcha; ?></label>
 			<div class="controls col-sm-7">
-				<input type="text" class="capcha" name="captcha" value="<?php echo $captcha; ?>" />
+				<input type="text" class="capcha" name="captcha" value="<?php //echo $captcha; ?>" />
 				<div class="captcha"><img src="index.php?route=information/contact/captcha" alt="" /></div>
-				<?php if ($error_captcha) { ?>
-				<span class="error help-block"><?php echo $error_captcha; ?></span>
-				<?php } ?>
-				<div class="buttons"><a onclick="$('#contact').submit();" class="button"><span><?php echo $button_continue; ?></span></a></div>
+				<?php //if ($error_captcha) { ?>
+				<span class="error help-block"><?php //echo $error_captcha; ?></span>
+				<?php // } ?>
+				<div class="buttons"><a onclick="$('#contact').submit();" class="button"><span><?php //echo $button_continue; ?></span></a></div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </form>
-	<?php echo $content_bottom; ?></div>
+	<?php //echo $content_bottom; ?></div>
 
-<?php echo $column_right; ?>
+<?php //echo $column_right; ?>
 
 <?php echo $footer; ?>

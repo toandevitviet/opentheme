@@ -730,11 +730,11 @@ header .top-buttons-logg .links{
 }
 header .top-buttons-logg .links li a {
 	font-size:25px;
-	line-height:45px;
+	line-height:46px;
 	padding:0;
-	width:45px;
+	width:46px;
 	text-align:center;
-	height:45px;
+	height:46px;
 	color:#fff;
 	background: #3aa3df; /* Old browsers */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNhYTNkZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMjk1ZGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -1187,7 +1187,7 @@ header #cart .empty {
 	float:right;
 	font-size:26px;
 	line-height:40px;
-	height:44px;
+	height:46px;
 	color:#ffffff;
 	padding:0 10px 0 14px;
 }
@@ -1200,7 +1200,7 @@ header #cart .empty {
 	color:#fff;
 	border-radius:0;
 	line-height:14px;
-	height:45px;
+	height:46px;
 	max-width:248px;
 	margin:0;
 	padding:15px 5px 15px 15px;
@@ -2941,26 +2941,27 @@ table.radio tbody td {
 /*======================= CONTACT PAGE =======================*/
 .contact-info {	
 	background:#f4f4f4;
-	padding:40px;
-	margin-bottom:20px;
+	padding:20px 35px 20px 25px;
+	margin-bottom:8px;
 }
 .contact-info .contact-box i {
 	color:#363a43;
 	font-size:26px;
 	width:1.25em;
 	vertical-align:middle;
+	margin-top: -10px;
 }
 .contact-info .contact-box {
 	margin-bottom:20px;
 	line-height:26px;
 }
 .contact-info .contact-box b{
-	color: #31353d;
+	/*color: #82BF40;*/
 	text-transform:uppercase;
 	margin-right:2px;
 }
 .contact-info iframe {
-	min-height:200px;
+	min-height:255px;
 	max-height:300px
 }
 .contact-info figure{
@@ -2970,7 +2971,7 @@ table.radio tbody td {
 	max-width:100%;
 }
 .content.contact-f {
-	background:#f4f4f4;
+	background:#bababa;
 	padding:40px 40px 20px;
 }
 .content.contact-f div.buttons,
@@ -4160,10 +4161,11 @@ span.toggle {
 }
 .breadcrumb {
 	line-height: 19px;
-	padding:16px 20px;
+	/*padding:16px 20px;*/
+	padding: 0px 23px;
 	text-align:left;
 	color:#31353d;
-	background:#dddcda;	
+	background:#bababa;	
 	border-radius:0;
 	-moz-border-radius:0;
 	-webkit-border-radius:0;
@@ -4460,7 +4462,7 @@ table.radio {
 }
 
 .newquery{
-    margin-top: 2px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -4509,11 +4511,17 @@ table.radio {
     font-size: 24px;
 }
 
-.foot-phone .phone-info{
+/*.foot-phone .phone-info{
     font-size: 16px; 
     line-height: 20px; 
     font-weight: bold; 
     font-style: italic; 
+    margin-top: 7px; 
+}*/
+
+.foot-phone .phone-info{
+    font-size: 14px; 
+    line-height: 20px; 
     margin-top: 7px; 
 }
 
@@ -4578,4 +4586,74 @@ table.radio {
 
 .address-add p.address{
 	font-size: 14px;
+}
+
+/*contact us*/
+b.green-color{
+	color: #82bf40;
+	font-size: 14px;
+	margin-left: 10px;
+}
+b.black-color{
+	color: #000;
+	font-size: 14px;
+}
+.map-left{
+    height: 260px;	
+    width: 652px;
+    padding-top: 30px;
+}
+.map-content{
+	width: 487px;
+}
+
+.query-form-contact{
+    margin-top: 30px;
+}
+
+.query-form-contact label{
+    color:#3a3d45;
+    text-align: right;
+    margin-top: 15px;
+    font-size: 18px;
+    width: 39%;
+    padding-right: 0px;
+    text-transform: uppercase;
+}
+.query-form-contact span{
+    width: 61%;
+}
+
+.query-form-contact input[type=text]{
+    height: 56px;
+    width: 290px;
+    float: right;
+    border: none;
+}
+
+.query-form-contact textarea#message{
+    border-radius: 0 !important;
+    border: none;  
+}
+
+.query-form-contact input[type=submit]{
+    width: 143px;
+    height: 45px;
+    background: #6C9B24;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0 !important;
+    font-size: 24px;
+    /*margin-right: 33px;*/
+    margin-top: 7px;
+}
+
+.box-content-es{
+	width: 915px;
+	/*margin: 0 auto;*/
+	margin-bottom: 90px;
+}
+
+.form-group-es{
+	margin-bottom: 26px;
 }

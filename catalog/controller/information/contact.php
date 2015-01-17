@@ -53,6 +53,8 @@ class ControllerInformationContact extends Controller {
 		$this->data['entry_enquiry'] = $this->language->get('entry_enquiry');
 		$this->data['entry_captcha'] = $this->language->get('entry_captcha');
 
+		$this->data['text_email'] = $this->language->get('text_email');
+
 		if (isset($this->error['name'])) {
 			$this->data['error_name'] = $this->error['name'];
 		} else {
@@ -84,6 +86,8 @@ class ControllerInformationContact extends Controller {
 		$this->data['address'] = nl2br($this->config->get('config_address'));
 		$this->data['telephone'] = $this->config->get('config_telephone');
 		$this->data['fax'] = $this->config->get('config_fax');
+
+		$this->data['text_email_add'] = $this->config->get('config_email');
 
 		if (isset($this->request->post['name'])) {
 			$this->data['name'] = $this->request->post['name'];

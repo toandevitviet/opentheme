@@ -15,7 +15,7 @@
 	background: -o-linear-gradient(top, #ffffff 0%,#f7f7f7 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ffffff 0%,#f7f7f7 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%); /* W3C */	
-	margin-bottom:4px;
+	margin-bottom:3px;
 }
 #menu:after {
 	position:absolute;
@@ -46,8 +46,8 @@ ul.sf-menu {
 	list-style: none;
 	width:100%;
 	table-layout: fixed;
-        border-right: #82bf40 1px solid;
-        border-bottom: #82bf40 1px solid;
+    border-right: #61AF19 1px solid;
+    border-bottom: #61AF19 1px solid;
 }
 ul.sf-menu > li:first-child {
 	background: none;
@@ -59,8 +59,8 @@ ul.sf-menu > li {
 	text-align: center;
 	width: 100%;	
 /*	background: url(../image/menu-sepatator.png) no-repeat left top;*/
-        border-left: #82bf40 1px solid;
-        border-top: #82bf40 1px solid;
+    border-left: #61AF19 1px solid;
+    border-top: #61AF19 1px solid;
 	}
 .ie ul.sf-menu > li {
 	width: auto;
@@ -75,7 +75,7 @@ ul.sf-menu > li > a {
 	font-weight:600;
 	font-size:16px;
 	line-height:74px;
-	height:76px;
+	height:75px;
 	color:#31353d;
 	text-transform:uppercase;
 }

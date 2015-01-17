@@ -1,7 +1,7 @@
 <?php
 // Heading 
 $_['heading_title'] = 'Featured';
- $_['heading_title'] = 'STOCK IMAGES FOR SALE !'; 
+ $_['heading_title'] = 'OTHER PRODUCTS FOR SALE !'; 
 
 // Text
 $_['text_reviews']  = 'Based on %s reviews.'; 
